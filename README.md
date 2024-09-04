@@ -1,5 +1,5 @@
 # ERACAI: AI Consensus Voting System [![Open Source](https://badges.frapsoft.com/os/v1/open-source.png?v=103)]()
-## We release previous versions as Open Source, therefore the code for the models will need upgraded. (changes fast)
+## We release previous versions as Open Source. [February 2024 Version 1 Beta released to Open Source September 4th 2024]
 
 ERACAI (Ensemble Response through AI Consensus) is a cutting-edge AI system that leverages multiple language models to generate consensus-based responses. By querying various AI models and implementing a majority voting mechanism, ERACAI provides more reliable and balanced answers to user queries.
 
