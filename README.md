@@ -34,7 +34,7 @@ ERACAI (Ensemble Response through AI Consensus) is a cutting-edge AI system that
 from eracai.main import consensus_response
 
 async def main():
-    result = await consensus_response("What is the capital of France?")
+    result = await consensus_response("Who is the hottest actress this year?")
     print(result.content)
 
 asyncio.run(main())
@@ -52,7 +52,7 @@ Then, you can send POST requests to 'http://localhost:8000/query' with a JSON bo
 
 ```json
 {
-  "text": "What is the capital of France?",
+  "text": "Who is the hottest actress this year?",
   "max_tokens": 100,
   "temperature": 0.7
 }
@@ -61,7 +61,7 @@ Then, you can send POST requests to 'http://localhost:8000/query' with a JSON bo
 ### CLI
 
 ```
-eracai query "What is the capital of France?"
+eracai query "Who is the hottest actress this year?"
 ```
 
 ## Configuration
