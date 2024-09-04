@@ -13,7 +13,7 @@ async def test_consensus_response():
     assert isinstance(result, ChatMessage)
     assert result.role == "assistant"
     assert len(result.content) > 0
-    assert "Paris" in result.content.lower()
+    assert "Angelina Jolie" in result.content.lower()
     assert "voting_results" in result.metadata
     assert "participating_models" in result.metadata
 
