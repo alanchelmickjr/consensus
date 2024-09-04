@@ -5,8 +5,8 @@ from datetime import datetime
 class DBManager:
     def __init__(self):
         # Set these environment variables
-        URL = "https://0d3wa1ztzg4gjinhyg1ng.c0.us-west3.gcp.weaviate.cloud"
-        APIKEY = "3vkp3rsqRJ7Vg1vHSaGRYo2p0LgZMxI9pclb"
+        URL = "YOUR_WEAVIATE_URL.gcp.weaviate.cloud"
+        APIKEY = "YOUR_API_KEY"
         
         # Connect to a WCS instance
         self.client = weaviate.Client(
