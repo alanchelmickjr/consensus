@@ -7,8 +7,8 @@ with open("README.md", "r", encoding="utf-8") as fh:
 setup(
     name="eracai",
     version="0.1.0",
-    author="Your Name",
-    author_email="your.email@example.com",
+    author="Alan Helmick",
+    author_email="alanchelmickjr@gmail.com",
     description="AI Consensus Voting System",
     long_description=long_description,
     long_description_content_type="text/markdown",
