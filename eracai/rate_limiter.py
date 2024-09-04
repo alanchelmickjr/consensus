@@ -1,5 +1,5 @@
 import asyncio
-from .config import Config
+from .models.config import Config
 
 class RateLimiter:
     def __init__(self, rate_limit):

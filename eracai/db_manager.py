@@ -1,25 +1,35 @@
-from .config import Config
-from .logger import logger
-from .exceptions import AIConsensusError, ModelQueryError, VotingError, DatabaseError
 import weaviate
+import os
 from datetime import datetime
 
 class DBManager:
     def __init__(self):
-        self.client = weaviate.Client("http://localhost:8080")  # Adjust URL as needed
-        self.ensure_schema()
+        # Set these environment variables
+        URL = "https://0d3wa1ztzg4gjinhyg1ng.c0.us-west3.gcp.weaviate.cloud"
+        APIKEY = "3vkp3rsqRJ7Vg1vHSaGRYo2p0LgZMxI9pclb"
+        
+        # Connect to a WCS instance
+        self.client = weaviate.Client(
+            url=URL,
+            auth_client_secret=weaviate.AuthApiKey(api_key=APIKEY)
+        )
 
+        self.ensure_schema()
+        
     def ensure_schema(self):
-        # Create schema if it doesn't exist
-        schema = {
-            "class": "AIConsensusResponse",
-            "properties": [
-                {"name": "query", "dataType": ["text"]},
-                {"name": "response", "dataType": ["text"]},
-                {"name": "timestamp", "dataType": ["date"]}
-            ]
-        }
-        self.client.schema.create_class(schema)
+        class_name = "AIConsensusResponse"
+        if not self.client.schema.exists(class_name):
+            schema = {
+                "class": class_name,
+                "properties": [
+                    {"name": "query", "dataType": ["text"]},
+                    {"name": "response", "dataType": ["text"]},
+                    {"name": "timestamp", "dataType": ["date"]}
+                ]
+            }
+            self.client.schema.create_class(schema)
+        else:
+            print(f"Schema for {class_name} already exists.")
 
     def store_best_response(self, query, response):
         # Store in Weaviate

@@ -1,4 +1,5 @@
-from setuptools import setup, find_packages
+import sys
+from setuptools import setup, find_packages  # type: ignore
 
 with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
@@ -25,19 +26,21 @@ setup(
     ],
     python_requires=">=3.7",
     install_requires=[
-        "fastapi",
-        "uvicorn",
-        "click",
-        "pydantic",
-        "asyncio",
-        "weaviate-client",
-        "python-dotenv",
-        "openai",
-        "anthropic",
+        "weaviate-client==3.24.1",
+        "fastapi==0.95.0",
+        "uvicorn==0.21.0",
+        "python-dotenv==0.21.0",
+        "click==8.1.3",
+        "pydantic==1.10.12",
+        "aiohttp",
+        "openai==1.3.0",
+        "anthropic==0.3.0",
         "google-generativeai",
         "groq",
-        "aiohttp",
     ],
+    extras_require={
+        'dev': ['pytest', 'pytest-asyncio'],
+    },
     entry_points={
         "console_scripts": [
             "eracai=eracai.cli:main",

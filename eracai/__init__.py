@@ -1,2 +1,2 @@
 from .main import consensus_response
-from .exceptions import AIConsensusError
+from .models.exceptions import AIConsensusError

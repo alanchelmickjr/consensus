@@ -1,10 +1,13 @@
+import sys
+import os
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 import pytest
 from eracai.main import consensus_response
 from eracai.chat_message import ChatMessage
 
 @pytest.mark.asyncio
 async def test_consensus_response():
-    query = "What is the capital of France?"
+    query = "Who is the hottest actress today?"
     result = await consensus_response(query)
     
     assert isinstance(result, ChatMessage)
