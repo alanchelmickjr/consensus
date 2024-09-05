@@ -27,7 +27,7 @@ setup(
     python_requires=">=3.7",
     install_requires=[
         "weaviate-client==3.24.1",
-        "fastapi==0.95.0",
+        "fastapi==0.109.1",
         "uvicorn==0.21.0",
         "python-dotenv==0.21.0",
         "click==8.1.3",
