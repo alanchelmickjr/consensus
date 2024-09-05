@@ -31,7 +31,7 @@ setup(
         "uvicorn==0.21.0",
         "python-dotenv==0.21.0",
         "click==8.1.3",
-        "pydantic==1.10.12",
+        "pydantic==1.10.13",
         "aiohttp",
         "openai==1.3.0",
         "anthropic==0.3.0",
