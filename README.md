@@ -1,6 +1,6 @@
 # ERACAI: AI Consensus Voting System [![Open Source](https://badges.frapsoft.com/os/v1/open-source.png?v=103)]()
-## We release previous versions as Open Source. 
-### This is the first vanilla template I created, the model vendor logic might need updated as do the model names.  Good "starting" place, template. [February 2024 V1.0 Alpha] <-
+## This is branched off the original framework for the Myriad Engine at https://myriadai.online (PRO version). 
+### Below find the first vanilla template I created, the model vendor logic might need updated as do the model names.  Good "starting" place, template. [February 2024 V1.0 Alpha] <- https://github.com/alanchelmickjr/consensus/tree/Vanilla-Template-01-Backup
 
 ERACAI (Ensemble Response through AI Consensus) is a cutting-edge AI system that leverages multiple language models to generate consensus-based responses. By querying various AI models and implementing a majority voting mechanism, ERACAI provides more reliable and balanced answers to user queries.
 
