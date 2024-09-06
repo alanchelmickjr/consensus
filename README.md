@@ -13,9 +13,9 @@ ERACAI (Ensemble Response through AI Consensus) is a cutting-edge AI system that
 - **FastAPI Backend**: Provides a robust and fast API interface for easy integration.
 - **CLI Tool**: Includes a command-line interface for quick testing and interaction.
   
-<div style="width: 300px; max-width: 100%; margin: 0 auto;">
-  <img src="https://gp8lfrj7ia0anqai.public.blob.vercel-storage.com/image-1725433942975-ApEAC4QKtJaPz3Trq4tQx35GgdL5In.jpg" 
-       style="width: 100%; max-width: 300px; height: auto; display: block; margin: 0 auto;">
+<div style="width: 400px; max-width: 100%; margin: 0 auto; text-align: center;">
+  <img src="https://gp8lfrj7ia0anqai.public.blob.vercel-storage.com/image-75-ApEAC4QKtJaPz3Trq4tQx35GgdL5In.jpg" 
+       style="width: 400px; max-width: 100%; height: auto; display: block; margin: 0 auto;">
 </div>
 
 ## Installation
